@@ -1,0 +1,4 @@
+date,counterparty,account_code,ref,description,debit,credit,currency
+2025-01-06,Group HQ,7020,IC-2025-002,Shared services payable,0,320000,TZS
+2025-01-16,Group HQ,7020,IC-2025-005,Logistics recharge payable,0,210000,TZS
+2025-02-02,Group HQ,7021,IC-2025-007,Year-end recharge payable,0,430000,TZS

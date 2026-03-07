@@ -1,0 +1,5 @@
+date,counterparty,account_code,ref,description,debit,credit,currency
+2025-01-03,Group HQ,7010,IC-2025-001,Management fee payable,0,500000,TZS
+2025-01-13,Group HQ,7010,IC-2025-004,Loan interest payable,0,185000,TZS
+2025-01-11,Group HQ,7011,IC-2025-006,USD export proceeds HQ share,895500,0,TZS
+2025-01-08,Entity B,7011,IC-2025-010,Processing fee payable,0,160000,TZS

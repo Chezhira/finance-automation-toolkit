@@ -1,0 +1,9 @@
+date,counterparty,account_code,ref,description,debit,credit,currency
+2025-01-03,Entity A,7001,IC-2025-001,Management fee charge,500000,0,TZS
+2025-01-06,Entity B,7002,IC-2025-002,Shared services recharge,320000,0,TZS
+2025-01-09,Entity C,7003,IC-2025-003,Carbon project advance,750000,0,TZS
+2025-01-13,Entity A,7001,IC-2025-004,Loan interest receivable,185000,0,TZS
+2025-01-16,Entity B,7002,IC-2025-005,Logistics recharge Q1,210000,0,TZS
+2025-01-11,Entity A,7001,IC-2025-006,USD export proceeds allocation,0,892000,TZS
+2025-01-29,Entity B,7002,IC-2025-007,Year-end recharge accrual,430000,0,TZS
+2025-01-19,Entity C,7003,IC-2025-008,Equipment lease cross-charge,275000,0,TZS
