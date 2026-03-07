@@ -14,7 +14,7 @@ All data in this repository is entirely synthetic and generated for demonstratio
 
 ## Background
 
-I'm a Group Finance Lead overseeing finance across six entities spanning manufacturing, processing, agro commodity processing, and carbon projects in Tanzania. The work involves multi-currency operations, TRA compliance, ERP systems (Odoo 18), and group-level reporting for 135+ employees.
+I'm a Finance Lead overseeing finance across six entities spanning manufacturing, processing, agro commodity processing, and carbon projects in Tanzania. The work involves multi-currency operations, TRA compliance, ERP systems (Odoo 18), and group-level reporting for 135+ employees.
 
 These scripts grew out of the day-to-day — reconciliation processes that were taking hours, payroll checks that were error-prone, VAT returns that kept generating audit queries. Python turned each of those into a reliable, repeatable process.
 
@@ -170,7 +170,7 @@ No external fuzzy-matching libraries required — the name normaliser and simila
 
 ## About
 
-**Zahidah Murira** · Group Finance Lead · CMA · CGBA · CFA Level I
+**Zahidah Murira** · Finance Lead · CMA · CGBA · CFA Level I
 
 Multi-entity finance operations, ERP systems (Odoo 18, Sage Pastel), Tanzania statutory compliance, and building the tools that make month-end close faster and audit-ready.
 
