@@ -6,6 +6,12 @@ Each tool in this repository replaced a manual Excel process — and was built t
 
 ---
 
+## Disclaimer
+
+All data in this repository is entirely synthetic and generated for demonstration purposes. No proprietary, confidential, or real business information is included. The tools were built independently to solve common finance automation problems.
+
+---
+
 ## Background
 
 I'm a Group Finance Lead overseeing finance across six entities spanning manufacturing, processing, agro commodity processing, and carbon projects in Tanzania. The work involves multi-currency operations, TRA compliance, ERP systems (Odoo 18), and group-level reporting for 135+ employees.
