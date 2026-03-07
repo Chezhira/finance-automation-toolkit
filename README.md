@@ -164,8 +164,8 @@ No external fuzzy-matching libraries required — the name normaliser and simila
 
 ## About
 
-**Your Name** · Group Finance Lead · CMA · CGBA · CFA Level I
+**Zahidah Murira** · Group Finance Lead · CMA · CGBA · CFA Level I
 
 Multi-entity finance operations, ERP systems (Odoo 18, Sage Pastel), Tanzania statutory compliance, and building the tools that make month-end close faster and audit-ready.
 
-[LinkedIn](https://linkedin.com/in/zahidahmurira) · your@email.com
+[LinkedIn](https://linkedin.com/in/zahidahmurira) · ziddmurira@gmail.com
