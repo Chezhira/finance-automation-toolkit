@@ -128,3 +128,15 @@ python recon_engine.py
 
   Report saved to: recon_report.xlsx
 ```
+
+---
+
+## Sample Data
+
+Ready-to-run synthetic data is in `sample_data/` (odoo_gl_export.csv + bank_statement.csv).
+
+To test immediately:
+```bash
+cd 01-bank-reconciliation
+python recon_engine.py
+```

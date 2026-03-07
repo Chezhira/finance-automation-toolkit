@@ -113,3 +113,15 @@ run_gl_forensics(
 
   Report saved → gl_forensics.xlsx
 ```
+
+---
+
+## Sample Data
+
+Ready-to-run synthetic data is in `sample_data/` (odoo_gl_export.csv).
+
+To test immediately:
+```bash
+cd 03-gl-forensics
+python gl_forensics.py
+```

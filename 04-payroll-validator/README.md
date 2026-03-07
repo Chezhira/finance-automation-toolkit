@@ -129,3 +129,15 @@ run_payroll_validation(
   Exceptions flagged: 5 / 20
   Gross spikes (>20%): 1
 ```
+
+---
+
+## Sample Data
+
+Ready-to-run synthetic data is in `sample_data/` (march_payroll.csv).
+
+To test immediately:
+```bash
+cd 04-payroll-validator
+python payroll_validator.py
+```

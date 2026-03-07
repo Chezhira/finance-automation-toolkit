@@ -137,3 +137,15 @@ run_mpesa_reconciliation(
   Unmatched:               0
   Match rate:              100.0%
 ```
+
+---
+
+## Sample Data
+
+Ready-to-run synthetic data is in `sample_data/` (mpesa_bulk.csv + purchase_ledger.csv).
+
+To test immediately:
+```bash
+cd 02-mpesa-fuzzy-matcher
+python mpesa_matcher.py
+```

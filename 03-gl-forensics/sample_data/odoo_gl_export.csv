@@ -1,0 +1,41 @@
+date,account_code,account_name,narration,debit,credit,ref,journal,partner
+2025-01-02,1001,Cash - Main Account,Client receipt - Export Batch A,85000,0,JNL0001,MISC,—
+2025-01-03,2001,Accounts Payable,Supplier payment - Alpha Supplies,0,45000,JNL0002,MISC,—
+2025-01-04,3001,Sales Revenue,Revenue recognition - Jan batch,0,120000,JNL0003,MISC,—
+2025-01-05,5001,Operating Costs,Operating cost - logistics,8500,0,JNL0004,MISC,—
+2025-01-06,2001,Accounts Payable,Supplier payment - Beta Logistics,0,28500,JNL0005,MISC,—
+2025-01-07,7001,Intercompany Account,Interco transfer - Entity B,15000,0,JNL0006,MISC,—
+2025-01-08,3001,Sales Revenue,Revenue - domestic sales,0,34000,JNL0007,MISC,—
+2025-01-10,5001,Operating Costs,Operating cost - packaging,4200,0,JNL0008,MISC,—
+2025-01-11,1001,Cash - Main Account,Client receipt - EU Client B,62000,0,JNL0009,MISC,—
+2025-01-12,2001,Accounts Payable,Supplier payment - Gamma Trading,0,19000,JNL0010,MISC,—
+2025-01-14,3001,Sales Revenue,Export revenue - Germany,0,78000,JNL0011,MISC,—
+2025-01-15,5001,Operating Costs,Maintenance cost,3300,0,JNL0012,MISC,—
+2025-01-17,1001,Cash - Main Account,Bank transfer received,9100,0,JNL0013,MISC,—
+2025-01-19,2001,Accounts Payable,Supplier payment - Delta Co,0,61000,JNL0014,MISC,—
+2025-01-21,3001,Sales Revenue,Domestic sales Q1,0,55000,JNL0015,MISC,—
+2025-01-23,5001,Operating Costs,Fuel and transport,7800,0,JNL0016,MISC,—
+2025-01-03,2001,Accounts Payable,Supplier payment - Alpha Supplies,0,45000,JNL0017,MISC,—
+2025-01-09,2001,Accounts Payable,Supplier payment - Beta Logistics alt,0,28500,JNL0018,MISC,—
+2025-01-13,3001,Sales Revenue,Accrual - Feb revenue,0,60000,JNL0019,MISC,—
+2025-01-18,3001,Sales Revenue,Reversal - Feb revenue accrual,60000,0,JNL0020,MISC,—
+2025-01-06,4001,Suspense Clearing Account,Unallocated receipt TXN-882,15000,0,JNL0021,MISC,—
+2025-03-27,6001,Supplier Payables Suspense,Supplier advance unallocated,7500,0,JNL0022,MISC,—
+2025-04-06,4001,Suspense Clearing Account,Transit clearing - bank transfer,22000,0,JNL0023,MISC,—
+2025-01-11,1001,Cash - Main Account,Cash advance - operations,50000,0,JNL0024,MISC,—
+2025-01-16,5001,Operating Costs,Cost estimate - processing,20000,0,JNL0025,MISC,—
+2025-03-01,2001,Accounts Payable,Transaction 1,12500,0,JNL0026,MISC,—
+2025-01-17,3001,Sales Revenue,Transaction 2,4200,0,JNL0027,MISC,—
+2025-02-25,4001,Suspense Clearing Account,Transaction 3,4200,0,JNL0028,MISC,—
+2025-01-04,5001,Operating Costs,Transaction 4,3400,0,JNL0029,MISC,—
+2025-01-08,5001,Operating Costs,Transaction 5,12500,0,JNL0030,MISC,—
+2025-02-09,2001,Accounts Payable,Transaction 6,3400,0,JNL0031,MISC,—
+2025-01-26,4001,Suspense Clearing Account,Transaction 7,4200,0,JNL0032,MISC,—
+2025-02-20,2001,Accounts Payable,Transaction 8,5600,0,JNL0033,MISC,—
+2025-01-27,5001,Operating Costs,Transaction 9,3400,0,JNL0034,MISC,—
+2025-01-21,4001,Suspense Clearing Account,Transaction 10,7800,0,JNL0035,MISC,—
+2025-01-08,4001,Suspense Clearing Account,Transaction 11,2300,0,JNL0036,MISC,—
+2025-01-09,3001,Sales Revenue,Transaction 12,9100,0,JNL0037,MISC,—
+2025-01-18,4001,Suspense Clearing Account,Transaction 13,5600,0,JNL0038,MISC,—
+2025-02-10,4001,Suspense Clearing Account,Transaction 14,7800,0,JNL0039,MISC,—
+2025-01-07,2001,Accounts Payable,Transaction 15,7800,0,JNL0040,MISC,—

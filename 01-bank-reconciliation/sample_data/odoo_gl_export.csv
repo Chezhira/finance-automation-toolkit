@@ -1,0 +1,26 @@
+date,reference,description,debit,credit,currency
+2025-01-03,GRP-0001,Supplier Payment - Alpha,1200,0,USD
+2025-01-04,GRP-0002,Export Receipt - EU Client,3400,0,USD
+2025-01-05,GRP-0003,Interco Transfer,750,0,USD
+2025-01-06,GRP-0004,Commodity Export,2100,0,USD
+2025-01-07,GRP-0005,Processing Proceeds,980,0,USD
+2025-01-08,GRP-0006,Carbon Credit Receipt,4500,0,USD
+2025-01-09,GRP-0007,Payroll Transfer,8200,0,USD
+2025-01-10,GRP-0008,Manufacturing Supplies,620,0,USD
+2025-01-11,GRP-0009,Freight Payment,1750,0,USD
+2025-01-12,GRP-0010,Client Receipt,3200,0,USD
+2025-01-13,GRP-0011,Export Invoice 2,5400,0,USD
+2025-01-14,GRP-0012,Utility Payment,890,0,USD
+2025-01-15,GRP-0013,Consulting Fee,2300,0,USD
+2025-01-16,GRP-0014,Large Export Batch,6700,0,USD
+2025-01-17,GRP-0015,Staff Advance,1100,0,USD
+2025-01-18,GRP-0016,Equipment Lease,4200,0,USD
+2025-01-19,GRP-0017,Packaging Materials,770,0,USD
+2025-01-20,GRP-0018,EU Client B,3300,0,USD
+2025-01-21,GRP-0019,Local Distributor,1900,0,USD
+2025-01-22,GRP-0020,Raw Materials,2800,0,USD
+2025-01-23,GRP-0021,Export Batch March,5100,0,USD
+2025-01-24,GRP-0022,Office Supplies,430,0,USD
+2025-01-25,GRP-0023,Logistics Payment,1600,0,USD
+2025-01-26,GRP-0024,Premium Export,7800,0,USD
+2025-01-27,GRP-0025,Agency Fee,2450,0,USD

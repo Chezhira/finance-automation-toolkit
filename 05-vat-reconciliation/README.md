@@ -129,3 +129,15 @@ The cross-period adjustment flows between periods, netting to zero across the fu
   ⚠ [INFO  ] Cross-Period Items: 2 invoice(s) span two periods
   ⚠ [MEDIUM] Unexplained Variances: 1 period/type combo after timing adj
 ```
+
+---
+
+## Sample Data
+
+Ready-to-run synthetic data is in `sample_data/` (odoo_vat_gl.csv + tra_returns.csv).
+
+To test immediately:
+```bash
+cd 05-vat-reconciliation
+python vat_reconciliation.py
+```
