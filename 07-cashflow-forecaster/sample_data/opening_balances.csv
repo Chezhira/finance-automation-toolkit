@@ -1,0 +1,9 @@
+entity,currency,balance
+Group HQ,TZS,280000000
+Group HQ,USD,85000
+Entity A,TZS,120000000
+Entity A,USD,42000
+Entity B,TZS,95000000
+Entity B,USD,18000
+Entity C,TZS,45000000
+Entity C,USD,8500

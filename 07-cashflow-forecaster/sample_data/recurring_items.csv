@@ -1,0 +1,11 @@
+entity,currency,description,amount,frequency,day_of_month
+Group HQ,TZS,Group payroll,45000000,MONTHLY,25
+Entity A,TZS,Entity A payroll,28000000,MONTHLY,25
+Entity B,TZS,Entity B payroll,22000000,MONTHLY,25
+Entity C,TZS,Entity C payroll,12000000,MONTHLY,25
+Group HQ,TZS,Office rent,8500000,MONTHLY,1
+Entity A,TZS,Processing facility rent,5200000,MONTHLY,1
+Entity B,TZS,Cold storage lease,3800000,MONTHLY,1
+Group HQ,TZS,TRA VAT payment,18000000,MONTHLY,20
+Group HQ,USD,USD loan repayment,5000,MONTHLY,15
+Entity A,USD,Equipment lease USD,2500,MONTHLY,10
