@@ -62,7 +62,7 @@ If the prior month gross is provided, the engine calculates the gross change per
 **Payroll CSV** (`march_payroll.csv`):
 ```
 emp_id,name,entity,department,gross,prev_gross,paye_submitted,nssf_ee_submitted,nssf_er_submitted,nhif_submitted,wcf_submitted,sdl_submitted,net_submitted
-EMP001,Amina Rashid,TML,Finance,320000,295000,4000,8000,8000,7500,1600,14400,294100
+EMP001,Amina Rashid,Group HQ,Finance,320000,295000,4000,8000,8000,7500,1600,14400,294100
 ```
 
 `prev_gross` is optional — omit if prior month comparison isn't needed.
@@ -79,7 +79,7 @@ EMP001,Amina Rashid,TML,Finance,320000,295000,4000,8000,8000,7500,1600,14400,294
 | Full Validation | All employees with calculated vs submitted |
 | Exceptions | Only employees with variances |
 | Deduction Summary | Aggregate by deduction type with variance |
-| Entity Breakdown | Totals per entity (TML / Tanlake / Upendo / DEC) |
+| Entity Breakdown | Totals per entity (Group HQ / Entity B / Entity A / Entity C) |
 | MoM Variance | Gross movements sorted by % change |
 
 ---
@@ -115,7 +115,7 @@ run_payroll_validation(
 ```
 ══════════════════════════════════════════════════
   PAYROLL VALIDATION SUMMARY
-  Third Man Ltd Group — 20 employees
+  Acacia Group Group — 20 employees
 ══════════════════════════════════════════════════
   Total gross:        TZS    16,585,000
   Total PAYE:         TZS     2,639,350

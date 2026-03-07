@@ -6,7 +6,7 @@ Reconciles Mpesa bulk payment exports against a purchase ledger where supplier n
 
 ## The Problem
 
-Third Man's Upendo Honey group pays 100+ beekeepers monthly via Mpesa bulk disbursement. The Mpesa file contains names as typed at payment time — abbreviated, without honorifics stripped, sometimes just initials. The Odoo purchase ledger has names as formally registered.
+Acacia Group's Entity A - Agro Processing group pays 100+ suppliers monthly via Mpesa bulk disbursement. The Mpesa file contains names as typed at payment time — abbreviated, without honorifics stripped, sometimes just initials. The Odoo purchase ledger has names as formally registered.
 
 Manual matching was achieving **84.5%**. The unmatched 15.5% required hours of manual lookup every month.
 
@@ -118,7 +118,7 @@ run_mpesa_reconciliation(
 ```
 ════════════════════════════════════════════════
   MPESA FUZZY MATCHING ENGINE
-  Third Man Ltd — Beekeeper Honey Purchases
+  Acacia Group — Supplier Agro Commodity Purchases
 ════════════════════════════════════════════════
 
   Mpesa rows:  10 | Ledger rows: 10

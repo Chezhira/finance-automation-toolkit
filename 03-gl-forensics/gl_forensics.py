@@ -1,6 +1,6 @@
 """
 GL Forensics & Duplicate Detection Engine
-Third Man Ltd — Upendo Honey Group
+Acacia Group — Entity A - Agro Processing
 Author: Learning Python for Finance - Week 3
 
 Problem: GL has duplicate transactions, uncleared suspense balances,
@@ -220,7 +220,7 @@ def build_report(gl: pd.DataFrame, suspense_aging: pd.DataFrame,
     clean = total - flagged
 
     print(f"\n{'═'*48}")
-    print(f"  GL FORENSICS SUMMARY — Upendo Honey")
+    print(f"  GL FORENSICS SUMMARY — Entity A - Agro Processing")
     print(f"{'═'*48}")
     print(f"  Total GL lines:          {total}")
     print(f"  Flagged:                 {flagged}  ({flagged/total*100:.1f}%)")
@@ -264,7 +264,7 @@ def build_report(gl: pd.DataFrame, suspense_aging: pd.DataFrame,
 def run_gl_forensics(gl_path: str, output_path: str = "gl_forensics.xlsx"):
     print(f"\n{'═'*48}")
     print(f"  GL FORENSICS ENGINE")
-    print(f"  Third Man Ltd — Upendo Honey Group")
+    print(f"  Acacia Group — Entity A - Agro Processing")
     print(f"{'═'*48}\n")
 
     gl = load_gl(gl_path)
@@ -289,12 +289,12 @@ if __name__ == "__main__":
     base = pd.Timestamp("2025-01-01")
 
     accounts = [
-        ("1001", "Cash - NBC USD"),
+        ("1001", "Cash - Multi-Currency Bank"),
         ("2001", "Accounts Payable"),
-        ("3001", "Honey Sales Revenue"),
+        ("3001", "Agro Commodity Sales Revenue"),
         ("4001", "Suspense Clearing Account"),
         ("5001", "Processing Costs"),
-        ("6001", "Beekeeper Payables Suspense"),
+        ("6001", "Supplier Payables Suspense"),
     ]
 
     rows = []
@@ -315,25 +315,25 @@ if __name__ == "__main__":
 
     # Normal transactions
     add(1,  0, "Receipt from EU client",           debit=85000)
-    add(2,  1, "Honey purchase - Kamau",            credit=45000)
+    add(2,  1, "Agro Commodity purchase - Kamau",            credit=45000)
     add(3,  2, "Revenue recognition - Feb batch",   credit=120000)
     add(4,  4, "Processing cost - wax extraction",  debit=8500)
     add(5,  1, "Supplier payment - Otieno",         credit=28500)
 
     # EXACT DUPLICATE (same as row 2)
-    add(2,  1, "Honey purchase - Kamau",            credit=45000)
+    add(2,  1, "Agro Commodity purchase - Kamau",            credit=45000)
 
     # NEAR DUPLICATE (same account+amount, 3 days later)
     add(5,  1, "Supplier payment - Otieno",         credit=28500)
 
     # REVERSAL PAIR
-    add(8,  2, "Accrual - March honey revenue",     credit=60000)
-    add(12, 2, "Reversal - March honey revenue",    debit=60000)
+    add(8,  2, "Accrual - March agro commodity revenue",     credit=60000)
+    add(12, 2, "Reversal - March agro commodity revenue",    debit=60000)
 
     # SUSPENSE entries — some old, some recent
-    add(5,  3, "Unallocated receipt ref TML-882",   debit=15000)   # recent
-    add(85, 5, "Beekeeper advance unallocated",      debit=7500)   # OLD — 85 days
-    add(95, 3, "Transit clearing - NBC transfer",    debit=22000)  # OLD — 95 days
+    add(5,  3, "Unallocated receipt ref Group HQ-882",   debit=15000)   # recent
+    add(85, 5, "Supplier advance unallocated",      debit=7500)   # OLD — 85 days
+    add(95, 3, "Transit clearing - Group Bank transfer",    debit=22000)  # OLD — 95 days
 
     # ROUND NUMBERS (large, suspicious)
     add(10, 0, "Cash advance - field ops",          debit=50000)

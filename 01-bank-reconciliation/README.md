@@ -6,7 +6,7 @@ Matches an Odoo GL export against a bank statement using a 3-pass algorithm that
 
 ## The Problem
 
-Manual bank reconciliation across multi-currency NBC accounts was a recurring monthly task. The Odoo GL and bank statement rarely matched cleanly — value dates shifted by 1–3 days, references were truncated or reformatted by the bank, and unmatched items piled up requiring manual triage.
+Manual bank reconciliation across multi-currency Group Bank accounts was a recurring monthly task. The Odoo GL and bank statement rarely matched cleanly — value dates shifted by 1–3 days, references were truncated or reformatted by the bank, and unmatched items piled up requiring manual triage.
 
 The process needed to be systematic, auditable, and fast.
 
@@ -45,15 +45,15 @@ Odoo GL Export          Bank Statement
 **Odoo GL export** (`odoo_export.csv`):
 ```
 date,reference,description,debit,credit,currency
-2025-01-02,TML-0001,Supplier Payment,1200,,USD
-2025-01-05,TML-0002,Export Receipt,,3400,USD
+2025-01-02,Group HQ-0001,Supplier Payment,1200,,USD
+2025-01-05,Group HQ-0002,Export Receipt,,3400,USD
 ```
 
 **Bank statement** (`bank_statement.csv`):
 ```
 date,reference,description,debit,credit
-2025-01-02,TML-0001,CR TML-0001,1200,
-2025-01-06,TML-0002,CR EXPORT EU,,3400
+2025-01-02,Group HQ-0001,CR Group HQ-0001,1200,
+2025-01-06,Group HQ-0002,CR EXPORT EU,,3400
 ```
 
 ---
@@ -104,7 +104,7 @@ python recon_engine.py
 ```
 ═══════════════════════════════════════════════
   BANK RECONCILIATION ENGINE
-  Third Man Ltd — Multi-Currency
+  Acacia Group — Multi-Currency
 ═══════════════════════════════════════════════
 
   Loading data...

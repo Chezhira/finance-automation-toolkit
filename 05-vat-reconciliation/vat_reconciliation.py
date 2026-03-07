@@ -1,6 +1,6 @@
 """
 VAT Reconciliation Engine
-Third Man Ltd — TRA VAT Return Reconciliation
+Acacia Group — TRA VAT Return Reconciliation
 Author: Learning Python for Finance - Week 5
 
 Problem: Odoo posts VAT on invoice date. TRA submissions use
@@ -92,7 +92,7 @@ def reconcile_by_period(odoo: pd.DataFrame, tra: pd.DataFrame) -> pd.DataFrame:
     merged["vat_variance"]  = merged["odoo_vat"]  - merged["declared_vat"]
     merged["status"] = merged.apply(
         lambda r: "MATCH" if abs(r["vat_variance"]) <= 500
-        else ("OVER_DECLARED" if r["vat_variance"] < 0 else "UNDER_DECLARED"),
+        else ("OVER_Entity CLARED" if r["vat_variance"] < 0 else "UNDER_Entity CLARED"),
         axis=1
     )
     return merged
@@ -256,7 +256,7 @@ def build_vat_report(odoo, tra, recon, timing, variances,
 
     print(f"\n{'═'*52}")
     print(f"  VAT RECONCILIATION SUMMARY")
-    print(f"  Third Man Ltd — TRA Returns")
+    print(f"  Acacia Group — TRA Returns")
     print(f"{'═'*52}")
     print(f"  Total Output VAT (Odoo):  TZS {total_odoo_output:>12,.0f}")
     print(f"  Total Input VAT (Odoo):   TZS {total_odoo_input:>12,.0f}")
@@ -295,7 +295,7 @@ def build_vat_report(odoo, tra, recon, timing, variances,
 def run_vat_reconciliation(odoo_path, tra_path, output_path="vat_reconciliation.xlsx"):
     print(f"\n{'═'*52}")
     print(f"  VAT RECONCILIATION ENGINE")
-    print(f"  Third Man Ltd — Bill Date vs Posting Date")
+    print(f"  Acacia Group — Bill Date vs Posting Date")
     print(f"{'═'*52}\n")
 
     odoo = load_odoo_vat_gl(odoo_path)
@@ -322,7 +322,7 @@ if __name__ == "__main__":
 
     periods = ["2025-01","2025-02","2025-03"]
     partners_out = ["EU Client A","EU Client B","Domestic Buyer","Export - Germany","Local Distributor"]
-    partners_in  = ["Supplier Kamau","NBC Bank","Fuel Supplier","Packaging Ltd","Logistics Co"]
+    partners_in  = ["Supplier Kamau","Group Bank Bank","Fuel Supplier","Packaging Ltd","Logistics Co"]
 
     odoo_rows = []
     ref = 1

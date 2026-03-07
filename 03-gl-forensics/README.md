@@ -36,8 +36,8 @@ Any account with "suspense", "clearing", "transit", or "unallocated" in its name
 **Odoo GL export** (`odoo_gl_export.csv`):
 ```
 date,account_code,account_name,narration,debit,credit,ref,journal,partner
-2025-01-02,2001,Accounts Payable,Honey purchase - Kamau,,45000,JNL0001,MISC,Kamau
-2025-01-02,2001,Accounts Payable,Honey purchase - Kamau,,45000,JNL0006,MISC,Kamau
+2025-01-02,2001,Accounts Payable,Agro Commodity purchase - Kamau,,45000,JNL0001,MISC,Kamau
+2025-01-02,2001,Accounts Payable,Agro Commodity purchase - Kamau,,45000,JNL0006,MISC,Kamau
 ```
 *(The second row above would be caught as an exact duplicate)*
 
@@ -87,7 +87,7 @@ run_gl_forensics(
 ```
 ════════════════════════════════════════════════
   GL FORENSICS ENGINE
-  Third Man Ltd — Upendo Honey Group
+  Acacia Group — Entity A - Agro Processing
 ════════════════════════════════════════════════
 
   GL rows loaded: 32

@@ -1,6 +1,6 @@
 """
 Payroll Validation Engine
-Third Man Ltd — Group Payroll (135–137 employees)
+Acacia Group — Group Payroll (135–137 employees)
 Author: Learning Python for Finance - Week 4
 
 Validates monthly payroll against Tanzania statutory deduction rules:
@@ -255,7 +255,7 @@ def build_payroll_report(df: pd.DataFrame, output_path: str = "payroll_validatio
 
     print(f"\n{'═'*50}")
     print(f"  PAYROLL VALIDATION SUMMARY")
-    print(f"  Third Man Ltd Group — {total} employees")
+    print(f"  Acacia Group Group — {total} employees")
     print(f"{'═'*50}")
     print(f"  Total gross:        TZS {df['gross'].sum():>14,.0f}")
     print(f"  Total PAYE:         TZS {df['paye_calc'].sum():>14,.0f}")
@@ -299,7 +299,7 @@ def build_payroll_report(df: pd.DataFrame, output_path: str = "payroll_validatio
 def run_payroll_validation(payroll_path: str, output_path: str = "payroll_validation.xlsx"):
     print(f"\n{'═'*50}")
     print(f"  PAYROLL VALIDATION ENGINE")
-    print(f"  Third Man Ltd — Tanzania Statutory Rules 2024/25")
+    print(f"  Acacia Group — Tanzania Statutory Rules 2024/25")
     print(f"{'═'*50}\n")
     df = load_payroll(payroll_path)
     print(f"  Employees loaded: {len(df)}")
@@ -314,10 +314,10 @@ def run_payroll_validation(payroll_path: str, output_path: str = "payroll_valida
 if __name__ == "__main__":
     np.random.seed(9)
 
-    entities = ["TML", "TML", "Tanlake", "Tanlake", "Upendo",
-                "Upendo", "DEC", "TML", "Upendo", "Tanlake"]
-    departments = ["Finance","Operations","Aquaculture","Aquaculture","Honey Proc",
-                   "Honey Proc","Carbon","Management","Logistics","Processing"]
+    entities = ["Group HQ", "Group HQ", "Entity B", "Entity B", "Entity A",
+                "Entity A", "Entity C", "Group HQ", "Entity A", "Entity B"]
+    departments = ["Finance","Operations","Processing","Processing","Agro Commodity Proc",
+                   "Agro Commodity Proc","Carbon","Management","Logistics","Processing"]
 
     gross_salaries = [
         180_000, 320_000, 450_000, 620_000, 850_000,

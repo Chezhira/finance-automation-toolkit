@@ -116,7 +116,7 @@ The cross-period adjustment flows between periods, netting to zero across the fu
 ```
 ════════════════════════════════════════════════════
   VAT RECONCILIATION SUMMARY
-  Third Man Ltd — TRA Returns
+  Acacia Group — TRA Returns
 ════════════════════════════════════════════════════
   Total Output VAT (Odoo):  TZS    4,012,920
   Total Input VAT (Odoo):   TZS      782,640

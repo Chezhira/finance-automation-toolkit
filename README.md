@@ -8,7 +8,7 @@ Each tool in this repository replaced a manual Excel process — and was built t
 
 ## Background
 
-I'm a Group Finance Lead overseeing finance across six entities spanning manufacturing, aquaculture, honey processing, and carbon projects in Tanzania. The work involves multi-currency operations, TRA compliance, ERP systems (Odoo 18), and group-level reporting for 135+ employees.
+I'm a Group Finance Lead overseeing finance across six entities spanning manufacturing, processing, agro commodity processing, and carbon projects in Tanzania. The work involves multi-currency operations, TRA compliance, ERP systems (Odoo 18), and group-level reporting for 135+ employees.
 
 These scripts grew out of the day-to-day — reconciliation processes that were taking hours, payroll checks that were error-prone, VAT returns that kept generating audit queries. Python turned each of those into a reliable, repeatable process.
 
@@ -19,7 +19,7 @@ These scripts grew out of the day-to-day — reconciliation processes that were 
 | # | Module | Problem Solved | Key Technique |
 |---|--------|---------------|---------------|
 | 01 | [Bank Reconciliation Engine](#01-bank-reconciliation-engine) | Odoo GL vs bank statement matching | 3-pass matching with date tolerance |
-| 02 | [Mpesa Fuzzy Matcher](#02-mpesa-fuzzy-matcher) | Beekeeper bulk payment reconciliation | Name normalisation + fuzzy scoring |
+| 02 | [Mpesa Fuzzy Matcher](#02-mpesa-fuzzy-matcher) | Supplier bulk payment reconciliation | Name normalisation + fuzzy scoring |
 | 03 | [GL Forensics](#03-gl-forensics) | Duplicate & anomaly detection in Odoo GL | Multi-layer flag engine |
 | 04 | [Payroll Validator](#04-payroll-validator) | Tanzania statutory deductions validation | PAYE/NSSF/NHIF/WCF/SDL rules engine |
 | 05 | [VAT Reconciliation](#05-vat-reconciliation) | TRA VAT return vs Odoo GL | Bill date vs posting date methodology |
@@ -164,8 +164,8 @@ No external fuzzy-matching libraries required — the name normaliser and simila
 
 ## About
 
-**Zahidah Murira** · Group Finance Lead · CMA · CGBA · CFA Level I
+**Your Name** · Group Finance Lead · CMA · CGBA · CFA Level I
 
 Multi-entity finance operations, ERP systems (Odoo 18, Sage Pastel), Tanzania statutory compliance, and building the tools that make month-end close faster and audit-ready.
 
-[LinkedIn](https://linkedin.com/in/zahidahmurira) · ziddmurira@gmail.com
+[LinkedIn](https://linkedin.com/in/zahidahmurira) · your@email.com

@@ -1,6 +1,6 @@
 """
 Mpesa Bulk Payment Fuzzy Matching Engine
-Third Man Ltd — Beekeeper Honey Purchase Reconciliation
+Acacia Group — Supplier Agro Commodity Purchase Reconciliation
 Author: Learning Python for Finance - Week 2
 
 Problem: Mpesa bulk payment file has supplier names in inconsistent formats.
@@ -304,7 +304,7 @@ def build_report(mpesa: pd.DataFrame, ledger: pd.DataFrame, output_path: str = "
 def run_mpesa_reconciliation(mpesa_path: str, ledger_path: str, output_path: str = "mpesa_recon.xlsx"):
     print(f"\n{'═'*48}")
     print(f"  MPESA FUZZY MATCHING ENGINE")
-    print(f"  Third Man Ltd — Beekeeper Honey Purchases")
+    print(f"  Acacia Group — Supplier Agro Commodity Purchases")
     print(f"{'═'*48}\n")
 
     mpesa = load_mpesa_file(mpesa_path)
@@ -329,8 +329,8 @@ if __name__ == "__main__":
 
     np.random.seed(7)
 
-    # Beekeeper names with real-world inconsistency patterns
-    beekeepers = [
+    # Supplier names with real-world inconsistency patterns
+    suppliers = [
         ("V001", "John Mwangi Kamau",       "0712345601", 45000),
         ("V002", "Mary Akinyi Odhiambo",    "0712345602", 32000),
         ("V003", "Peter Otieno",             "0712345603", 28500),
@@ -339,14 +339,14 @@ if __name__ == "__main__":
         ("V006", "Fatuma Binti Salim",       "0712345606", 42000),
         ("V007", "Joseph Kipchoge Farms",    "0712345607", 55000),
         ("V008", "Agnes Mutua Traders",      "0712345608", 23500),
-        ("V009", "Rashid Omar Beekeeper",    "0712345609", 37000),
+        ("V009", "Rashid Omar Supplier",    "0712345609", 37000),
         ("V010", "Eunice Atieno Suppliers",  "0712345610", 48000),
     ]
 
     # Purchase ledger (clean, as registered in Odoo)
     ledger_rows = []
     base_date = datetime(2025, 3, 1)
-    for vid, name, phone, amt in beekeepers:
+    for vid, name, phone, amt in suppliers:
         ledger_rows.append({
             "vendor_id": vid, "vendor_name": name, "phone": phone,
             "invoice_no": f"INV-{vid}", "amount": amt,
@@ -365,16 +365,16 @@ if __name__ == "__main__":
         "Fatuma Salim",              # Binti dropped
         "J KIPCHOGE",                # Joseph → J, Farms dropped
         "Agnes Mutua",               # Traders dropped
-        "Rashid Omar",               # Beekeeper dropped
+        "Rashid Omar",               # Supplier dropped
         "EUNICE A SUPPLIERS",        # middle → initial
     ]
-    mpesa_phones = [b[2] for b in beekeepers]
+    mpesa_phones = [b[2] for b in suppliers]
     # Introduce some phone mismatches
     mpesa_phones[2] = "0799999999"   # Peter: wrong phone — needs name match
     mpesa_phones[6] = "0799999998"   # Joseph: wrong phone — needs name match
 
     mpesa_rows = []
-    for idx, (name, (vid, _, phone, amt)) in enumerate(zip(mpesa_names, beekeepers)):
+    for idx, (name, (vid, _, phone, amt)) in enumerate(zip(mpesa_names, suppliers)):
         mpesa_rows.append({
             "receipt_no": f"MP{str(idx+1).zfill(4)}",
             "phone": mpesa_phones[idx],

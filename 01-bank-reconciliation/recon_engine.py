@@ -1,6 +1,6 @@
 """
 Bank Reconciliation Matching Engine
-Third Man Ltd - Multi-Currency Account Reconciliation
+Acacia Group - Multi-Currency Account Reconciliation
 Author: Learning Python for Finance - Week 1
 
 Matches Odoo GL export against bank statement using:
@@ -226,7 +226,7 @@ def build_report(odoo: pd.DataFrame, bank: pd.DataFrame, output_path: str = "rec
 def run_reconciliation(odoo_path: str, bank_path: str, output_path: str = "recon_report.xlsx"):
     print(f"\n{'═'*45}")
     print(f"  BANK RECONCILIATION ENGINE")
-    print(f"  Third Man Ltd — Multi-Currency")
+    print(f"  Acacia Group — Multi-Currency")
     print(f"{'═'*45}\n")
 
     print("  Loading data...")
@@ -254,7 +254,7 @@ if __name__ == "__main__":
     np.random.seed(42)
     dates = pd.date_range("2025-01-01", periods=20, freq="B")
     amounts = np.random.choice([500, 1200, 3400, 750, 2100, 980], size=20)
-    refs = [f"TML-{str(i).zfill(4)}" for i in range(1, 21)]
+    refs = [f"Group HQ-{str(i).zfill(4)}" for i in range(1, 21)]
 
     # Simulate Odoo export
     odoo_demo = pd.DataFrame({
