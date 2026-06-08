@@ -170,7 +170,7 @@ No external fuzzy-matching libraries required — the name normaliser and simila
 
 ## About
 
-**Zahidah Murira** · Finance Lead · CMA · CGBA · CFA Level I
+**Zahidah Murira** · Finance Lead · CMA · CGBA · CFA Institute Associate Member
 
 Multi-entity finance operations, ERP systems (Odoo 18, Sage Pastel), Tanzania statutory compliance, and building the tools that make month-end close faster and audit-ready.
 
